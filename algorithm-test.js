@@ -3,8 +3,10 @@ const arr = [];
  //* arr배열에 1~20 범위의 난수 입력
 function randomInt(arr,max,min){
   for(let i=0;i<3;i++){
+    // randomNum 변수에 랜덤 숫자 생성
     let randomNum = Math.floor((Math.random() * (max+1-min))+min);
-    if(arr.indexOf(randomNum) === -1){ 
+    if(arr.indexOf(randomNum) === -1){  
+      //? arr.indexOf(값) : arr배열에 찾는 값이 없으면 -1를 반환한다. 
       //* arr 배열에 랜덤으로 생성된 수가 없으면 push 함.
       arr.push(randomNum);
     }else{
