@@ -50,5 +50,3 @@ console.log(objectData);
 
 
 
-
-
